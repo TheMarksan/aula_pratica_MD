@@ -33,12 +33,28 @@ int ehprimo (int x,int cont){
 
 double nextprimo (int y,int n)
 {
-	if (y >= n && ehprimo(y,y/2) == 1)
+	if (y <= n && ehprimo(y,y/2) == 1 && n%y == 0)
 	{
 		return y;
 	}
 	else return nextprimo(y+1,n);
 	
+}
+
+int loop (int fatorado, cont)
+{
+
+if ( fatorado != 1)
+{
+
+printf ("%d ", nextprimo (2,fatorado));
+
+
+return loop((fatorado/nextprimo (2,fatorado)))
+}
+
+
+
 }
 
 
@@ -48,7 +64,7 @@ int n;
 
 scanf ("%d",&n);
 
-
+ 
 
 
 
