@@ -41,16 +41,16 @@ double nextprimo (int y,int n)
 	
 }
 
-int loop (int fatorado, cont)
+int loop (int fatorado)
 {
 
 if ( fatorado != 1)
 {
 
-printf ("%d ", nextprimo (2,fatorado));
+printf ("%.0lf \n", nextprimo (2,fatorado));
 
 
-return loop((fatorado/nextprimo (2,fatorado)))
+return loop((fatorado/nextprimo (2,fatorado)));
 }
 
 
@@ -64,7 +64,7 @@ int n;
 
 scanf ("%d",&n);
 
- 
+ loop(n);
 
 
 
