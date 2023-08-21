@@ -24,7 +24,7 @@ int primechecker (unsigned long int N) {
             }
             
         }
-
+        printf ("%ld\n",N);
         return 1;
 
     }
@@ -35,17 +35,23 @@ int time;
 long int current_number = 3;
 long int primes = 1;
 time = clock();
+printf ("2\n");
 while ((clock()-time)/CLOCKS_PER_SEC <60)
 {
 if ( primechecker(current_number) == 1)
 {
     primes++;
-    printf("%ld   ",primes);
+
 }
 current_number += 2;
 }
 
-printf("\n%ld",primes);
+printf("\n%ld primos impressos.",primes);
 }
-// A intenção é alcançar os 2.7 milhões.
-// Favor fazer o teste nos seus computadores e dizer o último valor printado...
+/* A intenção é alcançar os 2.7 milhões.
+ Favor fazer o teste nos seus computadores e dizer o último valor printado...
+ Alternativamente, podemos remover o contador de primos para aumentar performance...
+ Por enquanto, o 2 é printado a parte, por questões de otimização! 
+ Visto que ele é uma exceção, creio que não seja um problema fazer isso, mas se sintam livres para
+ modificar o código. :]
+ */

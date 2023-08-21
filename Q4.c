@@ -12,29 +12,24 @@ while (A != 1)
         printf ("2\n");
     }
 
-   n = 3;
+  int n = 3;
    while (A%n !=0)
    {
-    n++
+    n++;
    }
    while (A%n == 0)
    {
     A = A/n;
-    printf ("%d\n" n);
+    printf ("%d\n", n);
    }
-
-int main () {
+}
+int main () 
+{
 
 int A, B;
 
 scanf ("%d %d", &A, &B);
 primemaker (A, B);
-
-
-
-
-
-
 
 
 
