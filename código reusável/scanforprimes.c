@@ -2,30 +2,27 @@
 #include <stdlib.h>
 #include <math.h>
 #include <time.h>
-//  Escrever um programa que determina se um dado número inteiro é primo ou não.
-// Feita.
-int main () {
+// para verificar a performance, use a biblioteca time.h e a função clock!
+int primechecker (int N) {
 
    unsigned int N, cont;
+   // Números primos são somente positivos,
+   // poupa espaço para números maiorss
 scanf ("%d", &N);
 
 if ( (N%2 == 0 && N != 2) || N <= 1)
 {
-printf ("NÃO PRIMO");
 return 0;
 }
     for (cont = 3; cont <= sqrt(N); cont+= 2)
     {
         if (N%cont == 0)
         {
-            printf ("NÃO PRIMO");
             return 0;
         }
           
     }
-    printf ("\nPRIMO");
 
-
-    return 0;
+    return 1;
 
    }
