@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+// Determinar mdc via algoritmo de euclides
 int main()
 {
     int resto, n1, n2;
