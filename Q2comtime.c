@@ -55,4 +55,7 @@ printf("\n%ld primos impressos.",primes);
  Visto que ele é uma exceção, creio que não seja um problema fazer isso, mas se sintam livres para
  modificar o código. :]
  */
+/*
+3.966.050 primos impressos
+*/
 
